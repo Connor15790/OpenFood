@@ -1,0 +1,95 @@
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.pageContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    object-fit: cover;
+    border-radius: 10px; /* Maintain aspect ratio */
+    max-width: 400px; /* Prevent image from becoming too large on bigger screens */
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width on mobile */
+    height: auto;
+}
+
+.infoContainer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.title {
+    text-align: center; /* Center title on mobile */
+    font-size: 36px; /* Smaller font size on mobile */
+}
+
+.category {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Media Query for screens smaller than 768px (Tablet and Mobile) */
+@media (max-width: 768px) {
+    .pageContainer {
+        padding: 15px;
+        flex-direction: column; /* Stack image and infoContainer vertically */
+    }
+
+    .imageContainer {
+        height: auto; /* Adjust height to fit content */
+        width: 100%; /* Full width for the image */
+    }
+
+    .infoContainer {
+        margin-top: 20px;
+        padding: 0px 10px;
+    }
+
+    .title {
+        text-align: center; /* Center the title */
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    .category {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .subContainer {
+        margin-top: 20px;
+    }
+}
+
+/* Media Query for screens smaller than 480px (Mobile) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px; /* Even smaller font size on very small screens */
+    }
+
+    .category {
+        font-size: 14px; /* Adjust text size further */
+    }
+}

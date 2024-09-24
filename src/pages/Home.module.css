@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.searchcontainer {
+    /* background-color: red; */
+    position: relative;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
+.searchbar {
+    display: flex;
+    /* margin: 20px; */
+}
+
+.searchinput {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchbutton {
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.searchbutton:hover {
+    background-color: grey;
+    transition: 0.2s ease-in-out;
+}
+
+.sortcontainer {
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sort {
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort:hover {
+    background-color: #e4e2e1;
+}
+
+.dropdown {
+    padding: 10px 15px;
+    height: 50px;
+}
+
+.dropdowncontainer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .searchcontainer {
+        /* background-color: red; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .searchinput {
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .dropdown {
+        padding: 10px 15px;
+        height: 50px;
+    }
+
+    .dropdowncontainer {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
